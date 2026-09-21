@@ -9,7 +9,7 @@ import zipfile
 
 
 # Leer Archivo en formato .ZIP
-with zipfile.ZipFile('/content/11OCLicitacion.zip', 'r') as zip_ref:
+with zipfile.ZipFile('11OCLicitacion.zip', 'r') as zip_ref:
     with zip_ref.open('11OCLicitacion.csv') as archivo:
         df_dash = pd.read_csv(
             archivo,
